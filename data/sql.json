@@ -1,0 +1,13 @@
+{
+    "JD_KeMuYuE_List": [
+
+        {
+            "利息": "select  sum(Actual)  from JD_KeMuYuE_List as list inner join JD_KeMuYuE_Head as head on list.HeadUniqueNo=head.UniqueNo where Year = '2019' AND Month='8' and DptCode = 'CW10D' and (CaiWuBasicCode in ('CW30'))"
+
+        },
+        {
+            "汇兑损益": "select  sum(Actual)  from JD_KeMuYuE_List as list  inner join JD_KeMuYuE_Head as head on list.HeadUniqueNo=head.UniqueNo where Year = '2019' AND Month='8' and StationCode='SHANGHAI' and DptCode = 'CW10D' and (CaiWuBasicCode in ('CW40','CW50'))"
+
+        }
+    ]
+}
