@@ -49,11 +49,3 @@ class TestCheck():
             print(e)
             with open ('../log/log.txt','w',encoding='utf-8') as f:
                 f.write(str(e))
-
-# if __name__=="__main__":
-#     pytest.main(['-s','-q','--alluredir','./report','test_kemuyue.py'])
-#     os.system("E:/软件包/allure-2.7.0/allure-2.7.0/bin/allure.bat "
-#               "generate "
-#               "C:/Users/wellwin/Desktop/工作资料/ProjectX/pythonX自动化代码/PycharmProjects/caiwu/report"
-#               "-o "
-#               "C:/Users/wellwin/Desktop/工作资料/ProjectX/pythonX自动化代码/PycharmProjects/caiwu/report/html")
